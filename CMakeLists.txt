@@ -12,6 +12,9 @@
 
 cmake_minimum_required(VERSION 3.5.0)
 
+set(VERSION 1.0)
+set(SOVERSION 1)
+
 include(GNUInstallDirs)
 
 include("compiler.cmake")
@@ -107,7 +110,8 @@ target_include_directories("${lib_target_name}" PRIVATE ./include)
 target_include_directories("${lib_target_name_s}" PRIVATE ./include)
 
 set_target_properties("${lib_target_name}" PROPERTIES
-                        PUBLIC_HEADER ${public_headers})
+                        PUBLIC_HEADER ${public_headers}
+                        SOVERSION ${SOVERSION})
 set_target_properties("${lib_target_name_s}" PROPERTIES
                         PUBLIC_HEADER ${public_headers})
 set_target_properties("${lib_target_name_s}" PROPERTIES
