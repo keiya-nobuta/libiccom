@@ -34,7 +34,7 @@
 
 /* -------------------- BUILD TIME CONFIGURATION ----------------------- */
 // ICCom netlink family ID
-#define NETLINK_ICCOM 22
+#define NETLINK_ICCOM 23
 
 // TODO: grab this information from kernel include
 //  OR:  if we would have that in the device tree defined we could
